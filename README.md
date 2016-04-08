@@ -1,12 +1,20 @@
 # Project: Pizza Place
 
-#### _A web application that Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you, version 1.0, current as of 4.8.2016_
+#### _A website for a pizza company where a user can choose one or more individual toppings (cheese, pepperoni, artichoke, anchovy, etc) and a size to order a pizza and see the final cost, version 1.0, current as of 4.8.2016._
 
 #### By _**Anthony C. Gold**_
 
 ## Description
 
-This is the solo coding exercise from intro, week 4. It creates a web application that But I can't give you this case, it don't belong to me. Besides, I've already been through too much shit this morning over this case to hand it over to your dumb ass. Page is at http://anthgold.github.io/pizza
+This is the solo coding exercise from intro, week 4. It creates a website for a pizza company where a user can choose one or more individual toppings (cheese, pepperoni, artichoke, anchovy, etc) and a size to order a pizza and see the final cost.
+
+Requirements:
+
+* Allow the user to choose toppings and size for the pizza they'd like to order.
+* Create a pizza object constructor with properties for toppings and size.
+* Create a prototype method for the cost of a pizza depending on the selections chosen. Use your own formula for this.
+
+Page is at http://anthgold.github.io/pizza
 
 ## Setup/Installation Requirements
 
