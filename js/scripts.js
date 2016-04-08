@@ -1,22 +1,35 @@
-
-
-
-
 // Business Logic
 
-function Pizza(size, toppings) { // this could also be blank?!
-  this.size = size;
-  this.toppings = toppings; // this could also be a function
+function Score() {       // model
+  this.turnScore = 0;
+  this.totalScore = 0
 }
 
-Pizza.prototype.addTotal = function(turnScore) { // this needs tailored
+function Pizza(pieSize, toppings, price) { // this could also be blank?!
+  this.pieSize = pieSize;
+  this.toppings = toppings; // this could also be a function
+  this.price; // and this could definitely be a function
+}
+
+
+
+Pizza.prototype.addTotal = function(turnScore) { // model
   return this.totalScore + turnScore;
 }
 
-Pizza.prototype.addTurn = function(roll1, roll2) { // this needs tailored
+Pizza.prototype.totalPrice = function(something) { // this needs help
+  return this.price ~the operation~ ;
+}
+
+
+
+Pizza.prototype.addTurn = function(roll1, roll2) { // model
   return this.turnScore + roll1 + roll2;
 }
 
+Pizza.prototype.addToppings = function(toppingsArray) { // this needs help
+  return this.toppings + toppingsArray[0] + ... toppingsArray[n];
+}
 
 // User Interface Logic
 $(document).ready(function() {
