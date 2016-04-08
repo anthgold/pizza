@@ -1,27 +1,23 @@
 // Business Logic
 
-function Score() {       // model
-  this.turnScore = 0;
-  this.totalScore = 0
-}
+  // Creates object pizza with properties for size and toppings
 
-function Pizza(pieSize, toppings, price) { // this could also be blank?!
+function Pizza(pieSize, toppings) { // this could also be blank?!
   this.pieSize = pieSize;
   this.toppings = toppings; // this could also be a function
-  this.price; // and this could definitely be a function
 }
 
-
-
-Pizza.prototype.addTotal = function(turnScore) { // model
-  return this.totalScore + turnScore;
-}
+  // This prototype calculates the total price
 
 Pizza.prototype.totalPrice = function(something) { // this needs help
   return this.price ~the operation~ ;
 }
 
-
+  // This one could be a prototype, or it could be
+  // It could be a prototype, or it could be a function
+  // "In an object, variables become known as properties."
+  // "In an object, functions become known as methods."
+  // How does a prototype relate to a method?
 
 Pizza.prototype.addTurn = function(roll1, roll2) { // model
   return this.turnScore + roll1 + roll2;
