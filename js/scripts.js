@@ -17,13 +17,16 @@ function Pizza(size, toppings) {
 
 
 
-
-
-
 // User Interface Logic
 $(document).ready(function() {
-  $("form#number-taker").submit(function(event) {
+  $("form#choose-pizza").submit(function(event) {
     event.preventDefault();
+
+    var inputtedSize = $("input#new-size").val();
+    var inputtedToppings = $("input#new-toppings").val(); // this is a motherloving array, so it will likely need tweaking
+
+    var newPizza = new Pizza(inputtedSize, inputtedToppings);
+
 
   });   // Closes take input
 
