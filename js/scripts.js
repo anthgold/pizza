@@ -13,11 +13,12 @@ Pizza.prototype.totalPrice = function(something) { // this needs help
   return this.price ~the operation~ ;
 }
 
-  // This one could be a prototype, or it could be
   // It could be a prototype, or it could be a function
   // "In an object, variables become known as properties."
   // "In an object, functions become known as methods."
   // How does a prototype relate to a method?
+
+  // Prototypes are employed by JavaScript to define methods, which is what functions in objects are referred to.
 
 Pizza.prototype.addTurn = function(roll1, roll2) { // model
   return this.turnScore + roll1 + roll2;

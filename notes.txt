@@ -1,0 +1,8 @@
+Project Notes
+
+"In an object, variables become known as properties."
+"In an object, functions become known as methods."
+
+Q: How does a prototype relate to a method?
+
+A: Prototypes are employed by JavaScript to define methods, which is what functions in objects are referred to.
