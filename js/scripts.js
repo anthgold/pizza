@@ -2,19 +2,20 @@
 
 
 
-
-
-
-
-
 // Business Logic
 
-function Pizza(size, toppings) {
+function Pizza(size, toppings) { // this could also be blank?!
   this.size = size;
   this.toppings = toppings; // this could also be a function
 }
 
+Pizza.prototype.addTotal = function(turnScore) { // this needs tailored
+  return this.totalScore + turnScore;
+}
 
+Pizza.prototype.addTurn = function(roll1, roll2) { // this needs tailored
+  return this.turnScore + roll1 + roll2;
+}
 
 
 // User Interface Logic
