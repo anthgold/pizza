@@ -1,30 +1,38 @@
 // Business Logic
 
-  // Creates object pizza with properties for size and toppings
-
+  // Creates object Pizza with properties for size and toppings
 function Pizza(pieSize, toppings) { // this could also be blank?!
-  this.pieSize = pieSize;
-  this.toppings = toppings; // this could also be a function
+this.pieSize = pieSize;
+this.toppings = toppings; // this could also be a function
 }
 
-  // This prototype calculates the total price
+  // Sets the prices for various toppings
+var  priceMushrooms = 0.5;
+var  priceExtraCheese = 1;
+var  pricePepperoni = 2;
+      // To do: pass the toppings properties from the object Pizza to here
 
+  // Sets the base price and topping multiplier for various sizes
+var priceSmall = 10;
+var priceMedium = 15;
+var priceLarge = 20;
+var multiplierSmall = 1;
+var multiplierMedium = 1.5;
+var multiplierLarge = 2;
+      // To do: pass the size property from the object Pizza to here
+
+  // This prototype will calculate the total price of the pie
 Pizza.prototype.totalPrice = function(something) { // this needs help
+  //  totalPrice is sumOfToppings * sizeMultiplier + priceOfSize
   return this.price ~the operation~ ;
 }
 
-  // It could be a prototype, or it could be a function
-  // "In an object, variables become known as properties."
-  // "In an object, functions become known as methods."
-  // How does a prototype relate to a method?
-
-  // Prototypes are employed by JavaScript to define methods, which is what functions in objects are referred to.
-
+  // This prototype will calculate the price of toppings
 Pizza.prototype.addTurn = function(roll1, roll2) { // model
   return this.turnScore + roll1 + roll2;
 }
-
 Pizza.prototype.addToppings = function(toppingsArray) { // this needs help
+  //  toppingsPrice is priceTopping1 + ... priceTopping(n) -- fracking loop?
   return this.toppings + toppingsArray[0] + ... toppingsArray[n];
 }
 
