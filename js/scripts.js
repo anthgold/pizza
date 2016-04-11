@@ -1,29 +1,18 @@
 // Business Logic
 
   // Creates object Pizza with properties for size and toppings
-function Pizza(pieSize, toppings) { // this could also be blank?!
+function Pizza(pieSize, toppings, price) { // this could also be blank?!
 this.pieSize = pieSize;
 this.toppings = toppings; // this could also be a function
+this.price = price; // adds third element for total price
 }
-
-  // Sets the prices for various toppings
-var  priceMushrooms = 0.5;
-var  priceExtraCheese = 1;
-var  pricePepperoni = 2;
-      // To do: pass the toppings properties from the object Pizza to here
-
-  // Sets the base price and topping multiplier for various sizes
-var priceSmall = 10;
-var priceMedium = 15;
-var priceLarge = 20;
-var multiplierSmall = 1;
-var multiplierMedium = 1.5;
-var multiplierLarge = 2;
-      // To do: pass the size property from the object Pizza to here
 
   // This prototype will calculate the total price of the pie
 Pizza.prototype.totalPrice = function(something) { // this needs help
   //  totalPrice is sumOfToppings * sizeMultiplier + priceOfSize
+  var priceSmall = 10;
+  var priceMedium = 15;
+  var priceLarge = 20;
   return this.price ~the operation~ ;
 }
 
@@ -33,6 +22,12 @@ Pizza.prototype.addTurn = function(roll1, roll2) { // model
 }
 Pizza.prototype.addToppings = function(toppingsArray) { // this needs help
   //  toppingsPrice is priceTopping1 + ... priceTopping(n) -- fracking loop?
+  var  priceMushrooms = 0.5;
+  var  priceExtraCheese = 1;
+  var  pricePepperoni = 2;
+  var multiplierSmall = 1;
+  var multiplierMedium = 1.5;
+  var multiplierLarge = 2;
   return this.toppings + toppingsArray[0] + ... toppingsArray[n];
 }
 
