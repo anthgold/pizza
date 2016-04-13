@@ -30,18 +30,14 @@ $(document).ready(function() {
     event.preventDefault();
 
     var inputtedSize = $("input#new-size").val();
-    var inputtedToppings = $("input#new-toppings").val(); // this is a motherloving array, so it will likely need tweaking
-
+    var inputtedToppings = []; $("input#new-toppings:checked").each(function() {
+      inputtedToppings.push($(this).val());
+    });
     var newPizza = new Pizza(inputtedSize, inputtedToppings);
+    var price = pizza.price();
 
+    $(".total").text(price);
+    $(".output").show();
 
-  });   // Closes take input
-
-  // $("#resubmit").click(function(event) {
-  //   event.preventDefault();
-  //   location.reload();
-  //   $("#resubmit").hide();
-  //   $("form#number-taker").show();
-  // });   // Closes refresh function
-
-});     // Closes invoke JQuery
+  });
+});
