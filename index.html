@@ -16,45 +16,38 @@
     <div class="container">
       <h4>What kind of pie can Al sling for you today?</h4>
 
-        <div id="blanks">
+        <div id="form">
         <form id="choose-pizza">
         <!-- Pizza size drop-down -->
-        <label for="new-size">What size of pizza?
+          <label for="new-size">What size of pizza?</label>
           <select class="form-control" id="beverage">
-            <option>Small (10 inch)</option>
-            <option>Medium (14 inch)</option>
-            <option>Large (18 inch)</option>
+            <option value="small">Small (10 inch)</option>
+            <option value="medium">Medium (14 inch)</option>
+            <option value="large">Large (18 inch)</option>
           </select>
-        </label>
 
         <!-- Checkboxes. Why did I have to choose checkboxes?! -->
         <div id="which-toppings">
           <label>Which toppings?</label>
           <div class="checkbox">
             <input name="topping" id="topping-pepperoni" value="pepperoni" type="checkbox">
-            <label for="topping-pepperoni">
-              Pepperoni
-            </label>
+            <label for="topping-pepperoni">Pepperoni</label>
           </div>
           <div class="checkbox">
             <input name="topping" id="topping-mushrooms" value="mushrooms" type="checkbox">
-            <label for="topping-mushrooms">
-              Mushrooms
-            </label>
+            <label for="topping-mushrooms">Mushrooms</label>
           </div>
           <div class="checkbox">
             <input name="topping" id="topping-extra-cheese" value="extra-cheese" type="checkbox">
-            <label for="topping-extra-cheese">
-              Extra cheese
-            </label>
+            <label for="topping-extra-cheese">Extra cheese</label>
           </div>
         </div>
         <!-- Order button -->
         <button type="submit" class="btn">Make it, Al!</button>
         </form>
-      </div> <!-- Closes id blanks -->
+        </div> <!-- Closes id blanks -->
       <div id="output">
-        <label>Total: <span class="total"></span></label>
+        <label>Total: <span class="total">$</span></label>
       </div>
     </div> <!-- Closes class container -->
   </body>

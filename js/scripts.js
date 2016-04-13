@@ -7,15 +7,15 @@ this.toppings = [];
 
 Pizza.prototype.price = function () {
   var totalPrice = 0;
-  if (this.size === "small") {
+  if (this.pieSize === "small") {
     totalPrice = 10;
-  } else if (this.size === "medium") {
+  } else if (this.pieSize === "medium") {
     totalPrice = 15;
   } else {
     totalPrice = 20;
   }
   for (i = 0; i <= this.toppings.length; i++) {
-    if this.toppings.length <= 1 {
+    if (this.toppings.length <= 1) {
       totalPrice
     } else {
       total += this.toppings.length * 1;
@@ -34,7 +34,7 @@ $(document).ready(function() {
       inputtedToppings.push($(this).val());
     });
     var newPizza = new Pizza(inputtedSize, inputtedToppings);
-    var price = pizza.price();
+    var price = newPizza.price();
 
     $(".total").text(price);
     $(".output").show();
