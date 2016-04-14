@@ -1,12 +1,12 @@
 # Project: Pizza Place
 
-#### _A website for a pizza company where a user can choose one or more individual toppings (cheese, pepperoni, artichoke, anchovy, etc) and a size to order a pizza and see the final cost, version 1.0, current as of 4.8.2016._
+#### _A website for a pizza company where a user can choose one or more individual toppings (cheese, pepperoni, artichoke, anchovy, etc) and a size to order a pizza and see the final cost, version 1.0, current as of 4.14.2016._
 
 #### By _**Anthony C. Gold**_
 
 ## Description
 
-This is the solo coding exercise from intro, week 4. It creates a website for a pizza company where a user can choose one or more individual toppings (cheese, pepperoni, artichoke, anchovy, etc) and a size to order a pizza and see the final cost.
+This is the solo coding exercise from intro, week 4. It creates a website for a pizza company where a user can choose one or more individual toppings (pepperoni, sausage, or mushrooms) and a size to order a pizza and see the final cost.
 
 Requirements:
 
@@ -32,7 +32,7 @@ _{Are there issues that have not yet been resolved that you want to let users kn
 
 ## Support and contact details
 
-Questions? Concerns? Pathos? Sushi? Email: anthgold@gmail.com
+Questions? Concerns? Pathos? Pizza? Email: anthgold@gmail.com
 
 ## Technologies Used
 
@@ -42,6 +42,6 @@ _{Tell me about the languages and tools you used to create this app. Assume that
 
 ### License
 
-*Released under the MIT license. God help you if you use this.*
+*Released under the MIT license.*
 
 Copyright (c) 2016 **_Anthony C. Gold_**
