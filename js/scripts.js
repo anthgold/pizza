@@ -20,7 +20,7 @@ Pizza.prototype.price = function () {
     if (this.toppings.length <= 1) {
       totalPrice
     } else {
-      total += this.toppings.length * 1;
+      totalPrice += this.toppings.length * 1;
     }
   }
   return totalPrice
@@ -31,12 +31,18 @@ $(document).ready(function() {
   $("form#choose-pizza").submit(function(event) {
     event.preventDefault();
 
-    var inputtedSize = $("input.size").val();
-    var inputtedToppings = []; $("input.topping:checked").each(function() {
+    var inputtedSize = $('input[name="size"]:checked', '#choose-pizza').val();
+    console.log(inputtedSize); // this works
+
+    var inputtedToppings = []; $('input[name="topping"]:checked', '#choose-pizza').each(function() {
       inputtedToppings.push($(this).val());
     });
+    console.log(inputtedToppings); // this works
+
     var newPizza = new Pizza(inputtedSize, inputtedToppings);
     var price = newPizza.price();
+    console.log(newPizza); // this doesn't appear to
+    console.log(price); // this is getting size price but not toppings
 
     $(".total").text(price);
     $(".output").show();
