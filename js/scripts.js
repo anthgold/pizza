@@ -11,8 +11,10 @@ Pizza.prototype.price = function () {
     totalPrice = 10;
   } else if (this.pieSize === "medium") {
     totalPrice = 15;
-  } else {
-    totalPrice = 20;
+  } else if (this.pieSize === "large") {
+      totalPrice = 20;
+    } else {
+    totalPrice = " Free!";
   }
   for (i = 0; i <= this.toppings.length; i++) {
     if (this.toppings.length <= 1) {
@@ -29,8 +31,8 @@ $(document).ready(function() {
   $("form#choose-pizza").submit(function(event) {
     event.preventDefault();
 
-    var inputtedSize = $("input#new-size").val();
-    var inputtedToppings = []; $("input#new-toppings:checked").each(function() {
+    var inputtedSize = $("input.size").val();
+    var inputtedToppings = []; $("input.topping:checked").each(function() {
       inputtedToppings.push($(this).val());
     });
     var newPizza = new Pizza(inputtedSize, inputtedToppings);

@@ -16,38 +16,41 @@
     <div class="container">
       <h4>What kind of pie can Al sling for you today?</h4>
 
-        <div id="form">
-        <form id="choose-pizza">
-        <!-- Pizza size drop-down -->
-          <label for="new-size">What size of pizza?</label>
-          <select class="form-control" id="beverage">
-            <option value="small">Small (10 inch)</option>
-            <option value="medium">Medium (14 inch)</option>
-            <option value="large">Large (18 inch)</option>
-          </select>
+        <div id="forms">
+        <form id="choose-pizza" action="http://example.com/profile.php">
+        <!-- Pizza-size radio buttons -->
+          <p> What size pizza would you like?
+            <br />
+            <label>
+              <input type="radio" name="size" value="small" /> Small (10 inch)
+            </label>
+            <label>
+              <input type="radio" name="size" value="medium" /> Medium (14 inch)
+            </label>
+            <label>
+              <input type="radio" name="size" value="large" checked="checked" /> Large (18 inch)
+            </label>
+          </p>
 
-        <!-- Checkboxes. Why did I have to choose checkboxes?! -->
-        <div id="which-toppings">
-          <label>Which toppings?</label>
-          <div class="checkbox">
-            <input name="topping" id="topping-pepperoni" value="pepperoni" type="checkbox">
-            <label for="topping-pepperoni">Pepperoni</label>
-          </div>
-          <div class="checkbox">
-            <input name="topping" id="topping-mushrooms" value="mushrooms" type="checkbox">
-            <label for="topping-mushrooms">Mushrooms</label>
-          </div>
-          <div class="checkbox">
-            <input name="topping" id="topping-extra-cheese" value="extra-cheese" type="checkbox">
-            <label for="topping-extra-cheese">Extra cheese</label>
-          </div>
-        </div>
+        <!-- Toppings checkboxes. -->
+          <p>Which toppings?
+            <br />
+            <label>
+              <input type="checkbox" name="topping" value="pepperoni" /> Pepperoni
+            </label>
+            <label>
+              <input type="checkbox" name="topping" value="mushrooms" /> Mushrooms
+            </label>
+            <label>
+              <input type="checkbox" name="topping" value="extra-cheese" checked="checked" /> Extra cheese
+            </label>
+          </p>
         <!-- Order button -->
         <button type="submit" class="btn">Make it, Al!</button>
         </form>
-        </div> <!-- Closes id blanks -->
+      </div> <!-- Closes div #forms -->
       <div id="output">
-        <label>Total: <span class="total">$</span></label>
+        <label>Total: $<span class="total"></span></label>
       </div>
     </div> <!-- Closes class container -->
   </body>
