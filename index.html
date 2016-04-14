@@ -12,12 +12,12 @@
     <div class="navbar navbar-default navbar-fixed-top navbar-brand">
       <p>Big Al's Awesome Pizza</p>
     </div>
-
     <div class="container">
       <h4>What kind of pie can Al sling for you today?</h4>
 
         <div id="forms">
         <form id="choose-pizza" action="http://example.com/profile.php">
+
         <!-- Pizza-size radio buttons -->
           <p> What size pizza would you like?
             <br />
@@ -32,23 +32,25 @@
             </label>
           </p>
 
-        <!-- Toppings checkboxes. -->
-          <p>Which toppings?
+          <!-- Toppings rafio buttons. -->
+          <p> What topping?
             <br />
             <label>
-              <input type="checkbox" name="topping" value="pepperoni" /> Pepperoni
+              <input type="radio" name="topping" value="pepperoni" checked="checked" /> Pepperoni
             </label>
             <label>
-              <input type="checkbox" name="topping" value="mushrooms" /> Mushrooms
+              <input type="radio" name="topping" value="mushrooms" /> Mushrooms
             </label>
             <label>
-              <input type="checkbox" name="topping" value="extra-cheese" checked="checked" /> Extra cheese
+              <input type="radio" name="topping" value="sausage" /> Sausage
             </label>
           </p>
+
         <!-- Order button -->
         <button type="submit" class="btn">Make it, Al!</button>
         </form>
       </div> <!-- Closes div #forms -->
+      <!-- Output goes here -->
       <div id="output">
         <label>Total: $<span class="total"></span></label>
       </div>

@@ -2,7 +2,7 @@
 
 function Pizza(pieSize, toppings) {
 this.pieSize = pieSize;
-this.toppings = [];
+this.toppings = toppings;
 }
 
 Pizza.prototype.price = function () {
@@ -14,14 +14,12 @@ Pizza.prototype.price = function () {
   } else if (this.pieSize === "large") {
       totalPrice = 20;
     } else {
-    totalPrice = " Free!";
+    totalPrice = " Free!"; // this is an alert of sorts
   }
-  for (i = 0; i <= this.toppings.length; i++) {
-    if (this.toppings.length <= 1) {
-      totalPrice
-    } else {
-      totalPrice += this.toppings.length * 1;
-    }
+  if (this.toppings === "mushrooms") {
+    totalPrice += 1;
+  } else {
+  totalPrice += 2;
   }
   return totalPrice
 };
@@ -34,12 +32,10 @@ $(document).ready(function() {
     var inputtedSize = $('input[name="size"]:checked', '#choose-pizza').val();
     console.log(inputtedSize); // this works
 
-    var inputtedToppings = []; $('input[name="topping"]:checked', '#choose-pizza').each(function() {
-      inputtedToppings.push($(this).val());
-    });
-    console.log(inputtedToppings); // this works
+    var inputtedTopping = $('input[name="topping"]:checked', '#choose-pizza').val();
+    console.log(inputtedTopping); // does this work?
 
-    var newPizza = new Pizza(inputtedSize, inputtedToppings);
+    var newPizza = new Pizza(inputtedSize, inputtedTopping);
     var price = newPizza.price();
     console.log(newPizza); // this doesn't appear to
     console.log(price); // this is getting size price but not toppings
